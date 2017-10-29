@@ -97,3 +97,27 @@ ul li:last-child:after {
         visibility: visible; } }
 
 /*# sourceMappingURL=style.css.map */
+#carouselExample {
+  margin-bottom: 30px;
+}
+.text{
+  font-size: 16px;
+  color:#111;
+  margin-bottom: 20px;
+}
+#column-warp{
+  height: 130px;
+  font-size: 11px;
+  color: #95989A;
+}
+.column-title{
+  font-size: 16px; 
+  color:#111;
+}
+.release-day{
+  font-size: 10px; 
+  color: #212121;  
+}
+#each-row{
+  margin-bottom: 20px;
+}
