@@ -121,3 +121,15 @@ ul {
     }
   }
 }
+@media screen and (max-width: 768px) {
+    .body-img{
+      width: 100%;
+    }
+		.body-right{
+			order: 1;
+		}
+		.body-left{
+			order: 2;
+		}
+
+}

@@ -95,5 +95,14 @@ ul li:last-child:after {
         visibility: visible;
         display: block;
         visibility: visible; } }
+@media screen and (max-width: 768px) {
+  .body-img {
+    width: 100%; }
+
+  .body-right {
+    order: 1; }
+
+  .body-left {
+    order: 2; } }
 
 /*# sourceMappingURL=style.css.map */
