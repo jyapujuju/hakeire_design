@@ -29,13 +29,12 @@ html, body{
   padding-left: 8px;
 }
 .rcm-container{
-  padding-top: 30px;
+  padding-top: 0.5px;
+  padding-bottom: 10px;
   background-color: #fff;
-}
-
-.column-side{
-  // background-color: #fff;
-  padding: 30px 0 20px 10px;
+  img{
+    width: inherit;
+  }
 }
 .header-logo {
   margin-bottom: 20px;
@@ -68,6 +67,77 @@ ul {
 		}
 	}
 }
+.body-main-title {
+  font-size: 16px;
+  color:black;
+  margin-bottom: 20px;
+  border-left: 2px solid $secondary-color;
+  padding-left: 10px;
+}
+.column-warp{
+  height: 130px;
+  font-size: 11px;
+}
+.fa{
+  padding-right: 5px;
+}
+footer {
+  .footer-last {
+    text-align: center;
+    color: $text-color;
+  }
+  background-color: white;
+}
+.body-left{
+  background-color: white;
+  padding-bottom: 10px;
+
+}
+.body-main-title {
+  font-size: 16px;
+  color:black;
+  margin: 30px 0 20px 0;
+  border-left: 2px solid $secondary-color;
+  padding-left: 10px;
+}
+.column-warp{
+  height: 130px;
+  font-size: 11px;
+}
+.column-title{
+  font-size: 16px;
+  color:black;
+}
+.main-content-dim{
+  margin-bottom: 20px;
+  color: $text-color;
+  font-size: 11px;
+}
+.release-day{
+  font-size: 10px;
+  color: #212121;
+  .btn{
+    border-radius: 6px;
+    width: 50%;
+    float: right;
+    height: 19px;
+    font-size: 10px;
+    padding-bottom: 5px;
+    background-color: $secondary-color;
+    border: none;
+  }
+}
+.body-tags{
+  .btn{
+    background-color: $secondary-color;
+    margin: 0 2px 10px 0;
+
+  }
+  .fa{
+    padding-right: 5px;
+  }
+}
+
 @media (min-width: 768px) {
   /* show 3 items */
   .carousel-inner {
@@ -163,67 +233,28 @@ ul {
   }
 }
 
+@media (max-width: 765px) {
   .body-main-title {
-    font-size: 16px;
-    color:black;
-    margin-bottom: 20px;
-    border-left: 2px solid $secondary-color;
-    padding-left: 10px; 
+    color: gray;
   }
-
-  .column-warp{
-    height: 130px;
-    font-size: 11px;
+  p {
+    color: green;
   }
-  .column-title{
-    font-size: 16px; 
-    color:black;
+  .container {
+    background-color: red;
   }
-  .main-content-dim{
-    margin-bottom: 20px;
-    color: $text-color;
-    font-size: 11px;
+  .body-img {
+    width: 100%;
   }
-  .release-day{
-    font-size: 10px; 
-    color: #212121;  
-    .btn{
-      border-radius: 6px;
-      width: 50%;
-      float: right;
-      height: 19px;
-      font-size: 10px;
-      padding-bottom: 5px;
-      background-color: $secondary-color;
-      border: none;
-    }
-  }
-  .main-content-dsc{
-    padding-left: 10px;
-  }
-  // .body-image{
-  //   width:100px;
-  // }
-  
-
-  .body-tags{
-    .btn{
-      background-color: $secondary-color;
-      margin: 0 2px 10px 0; 
-    }
-    .fa{
-      padding-right: 5px;
-    }
-  }
-
-  .body-main{
-    padding-top: 30px;
-  }
-
-  footer{
-    .footer-last{
-    text-align: center;
-    color: $text-color;
-  }
-  background-color: #fff
+	.body-right {
+		order: 1;
+    -webkit-order: 1;
+	}
+	.body-left {
+		order: 2;
+    -webkit-order: 2;
+	}
+	.right-image {
+		width: 130px;
+	}
 }
