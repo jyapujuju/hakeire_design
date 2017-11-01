@@ -17,14 +17,25 @@ html, body{
     background-color: #fff;
   }
   .col-md-4{
+    padding-top: 0px;
     img{
       width: inherit;
     }
   }
+
 }
 .column-side{
+  padding-right: 0px;
+  padding-left: 8px;
+}
+.rcm-container{
+  padding-top: 30px;
   background-color: #fff;
-  padding: 30px 0 20px 0;
+}
+
+.column-side{
+  // background-color: #fff;
+  padding: 30px 0 20px 10px;
 }
 .header-logo {
   margin-bottom: 20px;
