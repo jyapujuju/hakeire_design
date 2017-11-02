@@ -9,10 +9,10 @@ html, body {
   background-color: #fff; }
 .container .col-md-8 {
   background-color: #fff; }
-.container .col-md-4 {
+.container .hidden-md-down {
   padding-top: 0px; }
-  .container .col-md-4 img {
-    width: inherit; }
+  .container .hidden-md-down img {
+    width: 100%; }
 
 .column-side {
   padding-right: 0px;
@@ -218,14 +218,20 @@ footer {
         display: block;
         visibility: visible; } }
 @media (max-width: 765px) {
+  .left_photo_half {
+    width: 50%; }
+
   .body-main-title {
     color: gray; }
+
+  .column-side {
+    padding-left: 0; }
 
   p {
     color: green; }
 
   .container {
-    background-color: red; }
+    background-color: #E4DEDE; }
 
   .body-img {
     width: 100%; }

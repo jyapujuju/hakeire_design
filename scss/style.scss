@@ -18,10 +18,10 @@ html, body{
   .col-md-8{
     background-color: $background-color;
   }
-  .col-md-4{
+  .hidden-md-down{
     padding-top: 0px;
     img{
-      width: inherit;
+      width: 100%;
     }
   }
 
@@ -267,14 +267,20 @@ footer {
 }
 
 @media (max-width: 765px) {
+  .left_photo_half{
+    width: 50%;
+  }
   .body-main-title {
     color: gray;
+  }
+  .column-side{
+    padding-left: 0;
   }
   p {
     color: green;
   }
   .container {
-    background-color: red;
+    background-color: $body-color;
   }
   .body-img {
     width: 100%;
