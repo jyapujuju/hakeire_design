@@ -1,20 +1,22 @@
 $primary-color:  #0093FF;
 $secondary-color: #00C4FF;
 $text-color: #95989A;
+$background-color: #fff;
+$body-color: #E4DEDE;
 
 html, body{
   font-size: 100%;
-  background: #EEECEC;
+  background: $body-color;
 }
 .container-fluid{
-  background-color: #fff;
+  background-color: $background-color;
 }
 .container{
   .masthead{
-    background-color: #fff
+    background-color: $background-color
   }
   .col-md-8{
-    background-color: #fff;
+    background-color: $background-color;
   }
   .col-md-4{
     padding-top: 0px;
@@ -31,7 +33,7 @@ html, body{
 .rcm-container{
   padding-top: 0.5px;
   padding-bottom: 10px;
-  background-color: #fff;
+  background-color: $background-color;
   img{
     width: inherit;
   }
@@ -86,10 +88,10 @@ footer {
     text-align: center;
     color: $text-color;
   }
-  background-color: white;
+  background-color: $background-color;
 }
 .body-left{
-  background-color: white;
+  background-color: $background-color;
   padding-bottom: 10px;
 
 }
@@ -257,4 +259,27 @@ footer {
 	.right-image {
 		width: 130px;
 	}
+}
+.carousel-caption{
+  background-color: #9AC5F7;
+  top: auto;
+  bottom: 0;
+  height: 100px;
+  left: 15px;
+  right:15px;  
+  .btn{
+    border-radius: 6px;
+    width: 40%;
+    float: right;
+    height: 19px;
+    font-size: 10px;
+    padding-bottom: 5px;
+    background-color: $background-color;
+    color: $secondary-color;
+    border: none;
+    margin-right: 10px;
+  }
+  span{
+    padding-left: 6px;
+  }
 }
