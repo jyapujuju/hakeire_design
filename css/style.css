@@ -217,6 +217,11 @@ footer {
         visibility: visible;
         display: block;
         visibility: visible; } }
+.carousel-control-button {
+  width: 4%; }
+  .carousel-control-button .fa-control {
+    color: #fff; }
+
 @media (max-width: 765px) {
   .body-main-title {
     color: gray; }

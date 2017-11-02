@@ -265,7 +265,12 @@ footer {
     }
   }
 }
-
+.carousel-control-button{
+  width: 4%;
+  .fa-control{
+    color: $background-color;
+  }
+}
 @media (max-width: 765px) {
   .body-main-title {
     color: gray;
