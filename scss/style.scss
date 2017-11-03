@@ -11,10 +11,11 @@ html, body{
 .container-fluid{
   background-color: $background-color;
 }
+.masthead{
+  background-color: $background-color
+}
+
 .container{
-  .masthead{
-    background-color: $background-color
-  }
   .col-md-8{
     background-color: $background-color;
   }
@@ -60,7 +61,8 @@ nav.navbar {
 ul {
 	li {
 		&:after {
-			content: "|";
+      content: "|";
+      color: $secondary-color;
 		}
 		&:last-child {
 			&:after {
@@ -87,6 +89,7 @@ footer {
   .footer-last {
     text-align: center;
     color: $text-color;
+    padding-bottom: 10px;
   }
   background-color: $background-color;
 }
@@ -140,6 +143,9 @@ footer {
   }
 }
 .carousel-item{
+  .img-fluid{
+    width: 100%;
+  }
   padding-right: 0;
   padding-left: 0;
 }
@@ -295,4 +301,7 @@ footer {
 	.right-image {
 		width: 130px;
 	}
+}
+.carousel-inner{
+  background-color: $background-color;
 }
