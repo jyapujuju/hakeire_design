@@ -138,6 +138,40 @@ footer {
   left: 0;
   opacity: 0.7; }
 
+.mobile-recomendation img {
+  position: relative;
+  z-index: 0;
+  width: 100%; }
+.mobile-recomendation .figure-caption {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  background-color: #00C4FF;
+  opacity: .65;
+  margin-right: 15px;
+  padding-bottom: 8px;
+  color: white;
+  font-weight: bold; }
+.mobile-recomendation p {
+  color: white;
+  padding-top: 10px;
+  margin-bottom: 10px; }
+.mobile-recomendation .btn {
+  background-color: white;
+  color: #0093FF;
+  float: right;
+  height: 19px;
+  border-radius: 6px; }
+
+.body-left {
+  display: table; }
+  .body-left .body-main {
+    display: table-header-group; }
+  .body-left .body-main {
+    display: table-row-group; }
+  .body-left .body-tags {
+    display: table-footer-group; }
+
 @media (min-width: 768px) {
   /* show 3 items */
   .carousel-inner .active {
@@ -227,8 +261,20 @@ footer {
   .column-side {
     padding-left: 0; }
 
-  p {
-    color: green; }
+  .body-left p {
+    display: none; }
+  .body-left .body-sub .column-title {
+    padding-top: 1rem; }
+  .body-left .body-sub .btn {
+    float: left; }
+  .body-left .body-main .release-day {
+    padding: 0; }
+  .body-left .body-main .btn {
+    float: right;
+    width: 50%; }
+  .body-left .body-main span {
+    float: left;
+    padding-left: 0; }
 
   .container {
     background-color: #E4DEDE; }
