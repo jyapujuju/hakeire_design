@@ -363,4 +363,11 @@ footer {
 	.right-image {
 		width: 130px;
 	}
+  .flex-tags{
+    display: flex;
+    flex-flow: row wrap;
+    .btn{
+      flex: 1 auto;
+    }
+  }
 }

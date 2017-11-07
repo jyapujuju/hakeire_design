@@ -291,6 +291,12 @@ footer {
     -webkit-order: 2; }
 
   .right-image {
-    width: 130px; } }
+    width: 130px; }
+
+  .flex-tags {
+    display: flex;
+    flex-flow: row wrap; }
+    .flex-tags .btn {
+      flex: 1 auto; } }
 
 /*# sourceMappingURL=style.css.map */
