@@ -5,8 +5,9 @@ html, body {
 .container-fluid {
   background-color: #fff; }
 
-.container .masthead {
+.masthead {
   background-color: #fff; }
+
 .container .col-md-8 {
   background-color: #fff; }
 .container .hidden-md-down {
@@ -41,7 +42,8 @@ nav.navbar a {
   color: black; }
 
 ul li:after {
-  content: "|"; }
+  content: "|";
+  color: #00C4FF; }
 ul li:last-child:after {
   content: ""; }
 
@@ -63,7 +65,8 @@ footer {
   background-color: #fff; }
   footer .footer-last {
     text-align: center;
-    color: #95989A; }
+    color: #95989A;
+    padding-bottom: 10px; }
 
 .body-left {
   background-color: #fff;
@@ -111,6 +114,8 @@ footer {
 .carousel-item {
   padding-right: 0;
   padding-left: 0; }
+  .carousel-item .img-fluid {
+    width: 100%; }
 
 .carousel-caption {
   background-color: #9AC5F7;
@@ -251,7 +256,21 @@ footer {
         visibility: visible;
         display: block;
         visibility: visible; } }
+.carousel-control-button {
+  width: 4%; }
+  .carousel-control-button .fa-control {
+    color: #fff; }
+
 @media (max-width: 765px) {
+  .navbar-nav {
+    display: inline;
+    display: -webkit-inline; }
+    .navbar-nav .nav-item {
+      display: inline;
+      color: green; }
+      .navbar-nav .nav-item .nav-link {
+        padding: 0 10px 0 10px !important; }
+
   .left_photo_half {
     width: 50%; }
 
@@ -298,5 +317,7 @@ footer {
     flex-flow: row wrap; }
     .flex-tags .btn {
       flex: 1 auto; } }
+.carousel-inner {
+  background-color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
