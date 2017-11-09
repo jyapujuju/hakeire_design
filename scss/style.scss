@@ -19,10 +19,10 @@ html, body{
   .col-md-8{
     background-color: $background-color;
   }
-  .col-md-4{
+  .hidden-md-down{
     padding-top: 0px;
     img{
-      width: inherit;
+      width: 100%;
     }
   }
 
@@ -149,7 +149,7 @@ footer {
   padding-right: 0;
   padding-left: 0;
 }
-.carousel-caption{
+.carousel-caption {
   background-color: #9AC5F7;
   top: auto;
   bottom: 0;
@@ -176,6 +176,48 @@ footer {
   right: 0;
   left: 0;
   opacity: 0.7;
+}
+.mobile-recomendation{
+  img{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+  }
+  .figure-caption{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    background-color: $secondary-color;
+    opacity: .65;
+    margin-right: 15px;
+    padding-bottom: 8px;
+    color:white;
+    font-weight: bold;
+  }
+  p{
+    color: white;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  .btn{
+    background-color: white;
+    color: $primary-color;
+    float: right;
+    height: 19px;
+    border-radius: 6px;
+  }
+}
+.body-left{
+  display: table;
+  .body-main {
+    display: table-header-group;
+  }
+  .body-main {
+    display: table-row-group;
+  }
+  .body-tags {
+    display: table-footer-group;
+  }
 }
 @media (min-width: 768px) {
   /* show 3 items */
@@ -278,14 +320,57 @@ footer {
   }
 }
 @media (max-width: 765px) {
+  .navbar-nav{
+    display: inline;
+    display: -webkit-inline;
+    .nav-item{
+      display: inline;
+      color: green;
+      .nav-link{
+        padding: 0 10px 0 10px !important;
+      }
+    }
+  }
+  .left_photo_half{
+    width: 50%;
+  }
   .body-main-title {
     color: gray;
   }
-  p {
-    color: green;
+  .column-side{
+    padding-left: 0;
+  }
+  .body-left{
+    p{
+      display: none;
+    }
+    .body-sub{
+      .column-title{
+        padding-top: 1rem;
+      }
+
+      .btn{
+        float: left;
+      }
+    }
+    .body-main{
+      .release-day{
+        padding: 0;
+      }
+      .btn{
+        float: right;
+        width: 50%;
+      }
+      span{
+        float: left;
+        padding-left: 0;
+
+      }
+
+    }
   }
   .container {
-    background-color: red;
+    background-color: $body-color;
   }
   .body-img {
     width: 100%;
@@ -294,13 +379,20 @@ footer {
 		order: 1;
     -webkit-order: 1;
 	}
-	.body-left {
+  .body-left {
 		order: 2;
     -webkit-order: 2;
 	}
 	.right-image {
 		width: 130px;
 	}
+  .flex-tags{
+    display: flex;
+    flex-flow: row wrap;
+    .btn{
+      flex: 1 auto;
+    }
+  }
 }
 .carousel-inner{
   background-color: $background-color;
