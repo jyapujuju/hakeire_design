@@ -47,16 +47,28 @@ html, body{
 .navbar {
 	.navbar-collapse {
     text-align: center;
+    .navbar-nav{
+      .nav-item{
+
+      }
+    }
 	}
 }
-nav.navbar {
+.navbar {
 	a {
 		display: inline-block;
 		padding-left: 20px !important;
 		padding-right: 20px !important;
     font-size: 16px;
     color: black;
+    &:hover {
+      color:red;
+    }
+    &:active {
+      color:red;
+    }
 	}
+
 }
 ul {
 	li {
@@ -217,6 +229,32 @@ footer {
   }
   .body-tags {
     display: table-footer-group;
+  }
+}
+.main-heading{
+  padding: 16px 0 16px 0;
+  font-size: 0.7rem;
+}
+.article-navigation{
+  padding-top: 20px;
+  span{
+    font-size: 0.8rem;
+    color: gray;
+  }
+  .btn{
+    border-radius: 6px;
+    width: 70px;
+    float: right;
+    height: 16px;
+    font-size: 10px;
+    padding-bottom: 5px;
+    background-color: #00C4FF;
+    border: none;
+    margin-top: 5px;
+    margin-left: 7px;
+  }
+  .article-heading{
+    padding-top: 16px;
   }
 }
 @media (min-width: 768px) {
