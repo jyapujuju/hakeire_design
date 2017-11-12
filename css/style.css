@@ -45,6 +45,21 @@ html, body {
   .navbar a:active {
     color: red; }
 
+.article_li_content li:after {
+  content: none; }
+
+.list_style_none {
+  list-style: none; }
+
+.article_list_bullet {
+  display: list-item; }
+
+.article_border_thin {
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: gray;
+  padding-bottom: 10px; }
+
 ul li:after {
   content: "|";
   color: #00C4FF; }
@@ -172,6 +187,11 @@ footer {
   height: 19px;
   border-radius: 6px; }
 
+.table-bordered {
+  border: .1rem black solid; }
+  .table-bordered td {
+    border: .1rem black solid; }
+
 .body-left {
   display: table; }
   .body-left .body-main {
@@ -203,6 +223,9 @@ footer {
     margin-left: 7px; }
   .article-navigation .article-heading {
     padding-top: 16px; }
+
+.card_border_blue {
+  border-color: #0093FF; }
 
 @media (min-width: 768px) {
   /* show 3 items */
